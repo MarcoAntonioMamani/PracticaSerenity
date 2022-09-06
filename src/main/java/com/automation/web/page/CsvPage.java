@@ -48,7 +48,7 @@ public class CsvPage extends PageObject {
             }
             upload("src/test/resources/data/imagen.png").to(btnCargar);
 
-            Serenity.takeScreenshot();
+            //Serenity.takeScreenshot();
         } catch (IOException e) {
             e.printStackTrace();
         }
