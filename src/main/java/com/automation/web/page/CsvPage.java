@@ -43,12 +43,15 @@ public class CsvPage extends PageObject {
                 txtEmail.type(csvRecord.get("email"));
                 txtTelefono.type(csvRecord.get("celular"));
                 find("//label[text()='"+csvRecord.get("genero")+"']").click();
+
                 withAction().moveToElement(find("//label[text()='"+csvRecord.get("hobbies")+"']")).perform();
+                withAction().moveToElement(find("//textarea[@placeholder='Current Address']")).perform();
+
                 find("//label[text()='"+csvRecord.get("hobbies")+"']").click();
             }
             upload("src/test/resources/data/imagen.png").to(btnCargar);
 
-            //Serenity.takeScreenshot();
+            Serenity.takeScreenshot();
         } catch (IOException e) {
             e.printStackTrace();
         }
