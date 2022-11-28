@@ -18,6 +18,9 @@ public class CabinaSteps {
 
     @Given("el usuario ingresa a la pagina de PeruRail")
     public void elUsuarioIngresaALaPaginaDePeruRail() {
+      System.out.println("Variables Sistemaaaaaaaaaaaa");
+    System.getProperty("ruta_bd");
+       System.out.println("FINNNNNNNNNNNNNN  ------------------------------");
     homePage.open();
     }
 
